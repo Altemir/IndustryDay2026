@@ -423,7 +423,6 @@ tbody th { font-weight: 600; }
 .login-copy-row code { font: 13px/1.7 Consolas, "Courier New", Courier, monospace; color: var(--cp-text); overflow-wrap: anywhere; user-select: all; }
 .login-copy-row .copy-status { grid-column: 1 / -1; font-size: 12px; }
 .login-copy-row .copy-status:empty { display: none; }
-.login-pattern-help { margin: 12px 0 0; font-size: 12px; line-height: 1.7; color: var(--cp-text-muted); }
 .mobile-nav-toggle { display: none; }
 .page-footer { border-top: 1px solid var(--cp-border); padding-top: 16px; padding-bottom: 24px; }
 @media(min-width:1500px) { .overview-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
@@ -630,19 +629,12 @@ tbody th { font-weight: 600; }
           </ol>
           <aside class="note"><strong>계정 선택 화면이 먼저 나오면</strong><br>개인·회사 계정을 선택하지 말고 <strong>다른 계정 사용</strong>을 선택합니다. 실습 계정은 이미 준비되어 있으므로 <strong>계정을 새로 만들지 않습니다.</strong></aside>
         </div>
-        <aside class="login-credentials" aria-label="실습 계정과 암호 형식">
+        <aside class="login-credentials" aria-label="실습 계정 형식">
           <div class="login-copy-row">
             <div><span class="login-pattern-label">실습 계정 · 테넌트 도메인</span><code id="login-account-pattern" tabindex="0">cowork##@Caldova91224653.onmicrosoft.com</code></div>
             <button class="button login-copy" type="button" data-copy-source="login-account-pattern" data-copy-success="계정 형식을 복사했습니다. ##를 배정된 두 자리 계정번호로 바꾸세요." aria-label="실습 계정 형식 복사" hidden>복사</button>
             <span class="copy-status" role="status" aria-live="polite"></span>
           </div>
-          <div class="login-copy-row">
-            <div><span class="login-pattern-label">비밀번호 패턴 · 고정문구는 가림</span><code id="login-password-pattern" tabindex="0">[고정 접두어]{좌석 2자리}[고정 연결어]{랩 번호}</code></div>
-            <button class="button login-copy" type="button" data-copy-source="login-password-pattern" data-copy-success="암호 구조를 복사했습니다. 실제 암호는 별도 배정 안내를 사용하세요." aria-label="비밀번호 패턴 복사" hidden>복사</button>
-            <span class="copy-status" role="status" aria-live="polite"></span>
-          </div>
-          <p class="login-pattern-help"><strong>##</strong>는 배정된 계정번호입니다. 암호의 좌석번호는 각 랩에서 <strong>01부터 다시 시작</strong>하며, 전체 계정번호와 다를 수 있습니다.</p>
-          <p class="login-pattern-help">복사되는 값은 안내용 형식입니다. 실제 암호와 고정문구는 교안에 포함하지 않으므로, 로그인할 때는 별도 배정 안내를 사용하세요.</p>
         </aside>
       </div>
       <figure class="figure">
